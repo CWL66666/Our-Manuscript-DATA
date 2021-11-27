@@ -53,7 +53,7 @@ model.fit(X_train, y_train)
 acc = model.score(X_test, y_test)  # Accuracy
 T_sim = model.predict(X_test)
 # 7 Run for 10 times and take the average value to prevent accidental events
-Acc = 0  # 准确率指标
+Acc = 0  # 
 for i in range(0, 10):  # Run for 10 times and take the average value
     model = RandomForestClassifier()
     model.fit(X_train, y_train)
